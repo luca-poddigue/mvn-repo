@@ -66,21 +66,12 @@
                     </executions>
                 </plugin>
                 <plugin>
-                    <groupId>io.quarkus</groupId>
-                    <artifactId>quarkus-maven-plugin</artifactId>
-                    <version>${quarkus.version}</version>
-                    <executions>
-                        <execution>
-                            <goals>
-                                <goal>build</goal>
-                            </goals>
-                        </execution>
-                    </executions>
-                </plugin>
-                <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>versions-maven-plugin</artifactId>
                     <version>2.7</version>
+                    <configuration>
+                        <processDependencyManagement>false</processDependencyManagement>
+                    </configuration>
                     <executions>
                         <execution>
                             <phase>compile</phase>
@@ -94,7 +85,7 @@
                 <plugin>
                     <groupId>com.github.github</groupId>
                     <artifactId>site-maven-plugin</artifactId>
-                    <version>0.11</version>
+                    <version>0.12</version>
                     <configuration>
                         <message>Maven artifacts for ${project.version}</message>
                         <noJekyll>true</noJekyll><!-- disable webpage processing -->
@@ -126,7 +117,7 @@
                 <plugin>
                     <groupId>org.jacoco</groupId>
                     <artifactId>jacoco-maven-plugin</artifactId>
-                    <version>0.8.3</version>
+                    <version>0.8.4</version>
                     <executions>
                         <execution>
                             <goals>
