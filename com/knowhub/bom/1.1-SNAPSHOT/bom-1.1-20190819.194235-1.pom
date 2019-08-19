@@ -91,7 +91,6 @@
                         <noJekyll>true</noJekyll><!-- disable webpage processing -->
                         <outputDirectory>${project.build.directory}/mvn-repo</outputDirectory>
                         <branch>refs/heads/master</branch>
-                        <path>${project.name}</path>
                         <includes>
                             <include>**/*</include>
                         </includes>
