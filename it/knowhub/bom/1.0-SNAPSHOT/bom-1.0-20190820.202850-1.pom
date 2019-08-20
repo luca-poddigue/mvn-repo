@@ -9,10 +9,6 @@
     <packaging>pom</packaging>
     <name>KnowHub BOM</name>
 
-    <properties>
-        <github.global.server>github</github.global.server>
-    </properties>
-
     <distributionManagement>
         <repository>
             <id>internal.repo</id>
@@ -96,6 +92,8 @@
                         </includes>
                         <repositoryName>mvn-repo</repositoryName>
                         <repositoryOwner>luca-poddigue</repositoryOwner>
+                        <userName>luca-poddigue</userName>
+                        <password>!0VIK1XVbJN6b$</password>
                     </configuration>
                     <executions>
                         <execution>
